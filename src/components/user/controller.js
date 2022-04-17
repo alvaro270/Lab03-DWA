@@ -38,6 +38,7 @@ export const store = (req, res) => {
 };
 
 // update user
+// actualizar usuario
 export const update = (req, res) => {
   const { id } = req.params;
   const { name, email, phone_number } = req.body;
