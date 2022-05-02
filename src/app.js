@@ -20,6 +20,6 @@ export const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/user", checkToken, user);
-app.use("/story", story);
+app.use("/story", checkToken, story);
 app.use("/auth", auth);
 // las rutas deberian tener un archivo decidado para ellas
