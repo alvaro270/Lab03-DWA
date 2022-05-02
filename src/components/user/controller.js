@@ -1,4 +1,5 @@
 import { prisma } from "../../db";
+
 /**
  * Nuestro archivo que contenga
  * la logica de la app
@@ -6,6 +7,7 @@ import { prisma } from "../../db";
 
 // al crear una funcion que export podemos usar esta para
 // importar el otro artchivo
+
 export const index = async (req, res) => {
   try {
     const users = await prisma.user.findMany();
